@@ -1,23 +1,15 @@
-"homepage": "https://Suvradip01.github.io/e-plantShopping",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview --host",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-
-
 {
   "name": "shoppingcart",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Suvradip01.github.io/e-plantShopping",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite build; vite preview --host"
+    "preview": "vite build && vite preview --host",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
